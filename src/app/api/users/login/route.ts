@@ -46,7 +46,6 @@ export async function POST(request: NextRequest) {
       httpOnly: true,
     });
     return response;
-    
   } catch (error: any) {
     return NextResponse.json({
       error: error.message,
